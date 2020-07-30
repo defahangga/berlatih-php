@@ -1,6 +1,15 @@
 <?php
 function pasangan_terbesar($angka){
-// kode di sini
+    $arrAngka = array_map('intval', str_split($angka));
+    $countArr = count($arrAngka);
+    $pairNamber = [];
+    $j = 0;
+    for ($i = 0; $i < $countArr-1; $i++){
+        $pairNamber[$i] = $arrAngka[$i] . $arrAngka[$i+1];
+        // $j = $j + 1;
+    }
+  echo "Pasangan terbesar dari $angka adalah : " . max($pairNamber);
+  echo "<br>";
 }
 
 // TEST CASES

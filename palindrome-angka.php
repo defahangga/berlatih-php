@@ -1,14 +1,17 @@
 <?php
 
 function palindrome_angka($angka) {
-  $reverse_number = 0;
-    $number_backup  = $number;
-    while($angka > 0){
-      $reverse_number = $reverse_number * 10 + $angka % 10;
-      $angka /= 10;
-    }
-    return $reverse_number == $number_backup;
-    echo "$reverse_number";
+  // $reverse_number = 0;
+  //   $number_backup  = $number;
+  //   while($angka > 0){
+  //     $reverse_number = $reverse_number * 10 + $angka % 10;
+  //     $angka /= 10;
+  //   }
+  //   return $reverse_number == $number_backup;
+  //   echo "$reverse_number";
+
+    
+
 }
 
 // TEST CASES
