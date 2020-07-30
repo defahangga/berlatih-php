@@ -1,6 +1,6 @@
 <?php
 function tentukan_deret_geometri($arr) {
-// kode di sini
+    
 }
 //TEST CASES
 echo tentukan_deret_geometri([1, 3, 9, 27, 81]); // true

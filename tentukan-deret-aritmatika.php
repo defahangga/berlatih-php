@@ -1,6 +1,14 @@
 <?php
 function tentukan_deret_aritmatika($arr) {
-// kode di sini
+    $ratio = $arr[1] / $arr[0];
+
+    for($i = 0; $i < count($arr); $i++){
+        if ($arr[count($arr)-1] - $arr[count($arr)-2] == $ratio ){
+            return "true<br>";
+        }else{
+            return "false<br>";
+        }
+    }
 }
 
 // TEST CASES
