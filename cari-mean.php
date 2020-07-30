@@ -1,10 +1,20 @@
 <?php
 
 function cari_mean($arr){
-//kode di sini
+    echo '<pre>'; print_r($arr); echo '</pre>';
+    $count = count($arr);
+    $jumlah = 0;
+    foreach ( $arr as $isiArr){
+        $jumlah = $jumlah + $isiArr;
+    }
+
+    $mean = $jumlah / $count;
+    echo "Mean = " . Round($mean);
+    echo "<br>";
+
 }
 
-TEST CASE 
+// TEST CASE 
 echo cari_mean([1, 2, 3, 4, 5]); // 3
 echo cari_mean([3, 5, 7, 5, 3]); // 5
 echo cari_mean([6, 5, 4, 7, 3]); // 5
